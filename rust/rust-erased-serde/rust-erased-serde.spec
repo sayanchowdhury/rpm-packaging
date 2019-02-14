@@ -5,7 +5,7 @@
 %global crate erased-serde
 
 Name:           rust-%{crate}
-Version:        0.3.8
+Version:        0.3.9
 Release:        1%{?dist}
 Summary:        Type-erased Serialize and Serializer traits
 
@@ -13,8 +13,6 @@ Summary:        Type-erased Serialize and Serializer traits
 License:        MIT or ASL 2.0
 URL:            https://crates.io/crates/erased-serde
 Source:         %{crates_source}
-# Initial patched metadata
-Patch0:         erased-serde-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 
@@ -27,7 +25,7 @@ BuildRequires:  (crate(serde_json/default) >= 1.0.0 with crate(serde_json/defaul
 %endif
 
 %global _description \
-Type-erased Serialize and Serializer traits
+Type-erased Serialize and Serializer traits.
 
 %description %{_description}
 
@@ -41,6 +39,8 @@ This package contains library source intended for building other packages
 which use "%{crate}" crate.
 
 %files          devel
+%doc README.md
+%license LICENSE-APACHE LICENSE-MIT
 %{cargo_registry}/%{crate}-%{version}/
 
 %package     -n %{name}+default-devel
@@ -83,5 +83,5 @@ which use "unstable-debug" feature of "%{crate}" crate.
 %endif
 
 %changelog
-* Mon Feb 11 2019 Sayan Chowdhury <sayanchowdhury@fedoraproject.org> - 0.3.8-1
+* Mon Feb 11 2019 Sayan Chowdhury <sayanchowdhury@fedoraproject.org> - 0.3.9-1
 - Initial package
