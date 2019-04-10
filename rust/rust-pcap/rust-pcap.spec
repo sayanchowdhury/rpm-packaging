@@ -40,7 +40,8 @@ This package contains library source intended for building other packages
 which use "%{crate}" crate.
 
 %files          devel
-%doc README.md LICENSE-APACHE LICENSE-MIT
+%doc README.md
+%license LICENSE-APACHE LICENSE-MIT
 %{cargo_registry}/%{crate}-%{version}/
 
 %package     -n %{name}+default-devel
@@ -167,5 +168,5 @@ which use "tokio-core" feature of "%{crate}" crate.
 %endif
 
 %changelog
-* Tue Apr 09 2019 Sayan Chowdhury - 0.7.0-1
+* Tue Apr 09 2019 Sayan Chowdhury <sayanchowdhury@fedoraproject.org> - 0.7.0-1
 - Initial package
