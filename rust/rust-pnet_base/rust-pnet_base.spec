@@ -7,7 +7,7 @@
 Name:           rust-%{crate}
 Version:        0.22.0
 Release:        1%{?dist}
-Summary:        Fundamental base types and code used by pnet.
+Summary:        Fundamental base types and code used by pnet
 
 # Upstream license specification: MIT/Apache-2.0
 License:        MIT or ASL 2.0
