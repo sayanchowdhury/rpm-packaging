@@ -7,7 +7,7 @@
 Name:           rust-%{crate}
 Version:        0.22.0
 Release:        1%{?dist}
-Summary:        Access to network related system function and calls.
+Summary:        Access to network related system function and calls
 
 # Upstream license specification: MIT/Apache-2.0
 License:        MIT or ASL 2.0
